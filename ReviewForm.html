@@ -18,15 +18,40 @@
         
          </div>
     <hr>
-
-<br>
-<br>
+<!-- Creats form , also uses a field set to outline  2 different areas.-->
 <div class="header">
+    <form>
 <h1>Please feel free to write a review so we can approve our performance! </h1>
-</div>
-<br>
+<div class="Forms">
+<fieldset>
+        <legend>Personal information:</legend>
+    First name:<br>
+    <input type="text" name="firstname"><br>
+    Last name:<br>
+    <input type="text" name="lastname"><br>
+    Phone #<br>
+    <input type="text" name="Phone #"><br>
+    <br>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+  <br><br>
+  </fieldset>
+  <fieldset>
+        <legend>Additional notes for our team.</legend>
+  <textarea name="message" rows="10" cols="30">Place  review here.
+        </textarea>
+        </fieldset>
+  </form>
 
-    <img class="centeredpic" src="italiandinner.png" alt="ItalDinner" >
-       
+  
+  <!-- submit button takes you to thank you for review page.-->
+  <button>
+        <a href='ReviewSubmitted.html'>Send Review!</a>
+    </button>
+   
+</div>
+</div>
+  
 </body>
 </html>

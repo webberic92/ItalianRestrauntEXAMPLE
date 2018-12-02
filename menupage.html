@@ -5,7 +5,7 @@
     <title>MENU PAGE</title>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"> </script>
 </head>
 <body>
@@ -13,44 +13,48 @@
         <a class="Home" href="ItalianRest.html">Home</a>
         <a class="#Menu" href="menupage.html">Menu</a>
         <a class="#Review" href="ReviewForm.html">Review</a>
-</div> 
+</div>
     <hr>
         <div class="header">
                 <h1>MENU PAGE!</h1>
         </div>
         <hr>
         <br>
+
+        <!--  Each Item Has buttons to call totalpriceswitch or totalminusprice functions.-->
     <div class="menupage">
                 <table>
                 <tr>
                   <th><img src="epparm.jpg" alt="HTML5 Icon"></th>
                   <th>The Egg Plant Parm is $10.</th>
-                  <th><input type=button onclick="totalpriceswitch(0)" value='Add To Order.'></th>
+                  <th><input type=button onclick="totalpriceswitch(0)" value='Add To Order.'><input type=button onclick="totalpriceminus(0)" value='Remove From Order'></th>
+                  <th id="egg">You have ordered 0 of these</th>
                 </tr>
               </table>
         <br><hr><table>
                 <tr>
                   <th><img src="chxparm.jpg" alt="HTML5 Icon"></th>
                   <th>The Chicken Parm is $13.</th>
-                  <th><input type=button onclick="totalpriceswitch(1)" value='Add To Order.'></th>
+                  <th><input type=button onclick="totalpriceswitch(1)" value='Add To Order.'><input type=button onclick="totalpriceminus(1)" value='Remove From Order'></th>
+                  <th id="chx">You have ordered 0 of these</th>
                 </tr>
               </table>
-        
         <br><hr>
         <table>
                 <tr>
                   <th><img src="vealparm.jpg" alt="HTML5 Icon"></th>
                   <th>The Veal Parm is $15.</th>
-                  <th><input type=button onclick="totalpriceswitch(2)" value='Add To Order.'></th>
+                  <th><input type=button onclick="totalpriceswitch(2)" value='Add To Order.'><input type=button onclick="totalpriceminus(2)" value='Remove From Order'></th>
+                  <th id="parm">You have ordered 0 of these</th>
                 </tr>
               </table>
-        
         <br><hr>
         <table>
                 <tr>
                   <th><img src="spght.jpg" alt="HTML5 Icon"></th>
                   <th>The Spaghetti is $9.</th>
-                  <th><input type=button onclick="totalpriceswitch(3)" value='Add To Order.'></th>
+                  <th><input type=button onclick="totalpriceswitch(3)" value='Add To Order.'><input type=button onclick="totalpriceminus(3)" value='Remove From Order'></th>
+                  <th id="speg">You have ordered 0 of these</th>
                 </tr>
               </table>
                 <br><hr>
@@ -58,31 +62,31 @@
                         <tr>
                           <th><img src="pizza.jpg" alt="HTML5 Icon"></th>
                           <th>The Large Pizza is $20.</th>
-                          <th><input type=button onclick="totalpriceswitch(4)" value='Add To Order.'></th>
+                          <th><input type=button onclick="totalpriceswitch(4)" value='Add To Order.'><input type=button onclick="totalpriceminus(4)" value='Remove From Order'></th>
+                          <th id="za">You have ordered 0 of these</th>
                         </tr>
                       </table>
                       </div>
          
         <br><hr>
         <div class="menupage">
+          <!-- These get over written from the inner.HMTL in Main.js file to show subtotal, tax, and final total.-->
         <p id="total">Your Total will appear when you make a selection...</p>
         <p id="taxfinal"></p>
         <p id="finaltotal"></p>
         
-        
       </div>
-        
-      
-        
         <div>
+          <!-- Button runs JSconfirm sweet alert from JS file.-->
     <input class="button" type=button onclick="JSconfirm()" value='Click here to verify and place your order!'>
-
-        <!-- <input class="button" type=button onclick="alertBox()" value='Click here to verify and place your order!'> -->
          <br><hr><br>
     </div>
-
 </body>
 </html>
+
+
+
+
 
 
 

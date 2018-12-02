@@ -5,8 +5,7 @@
     font-weight: bold;
     margin-left: auto;
     margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    
    }
 body {
     background-image:url("background.jpg");
@@ -98,4 +97,10 @@ body {
 .topnav a.active {
    background-color: #4CAF50;
    color: white;
+}
+.fieldset{
+   background-color:orange;
+}
+form{
+   background-color:orange;
 }
