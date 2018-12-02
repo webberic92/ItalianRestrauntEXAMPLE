@@ -1,0 +1,70 @@
+.header{
+    background-color: orange;
+    height: 75px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+   }
+body {
+    background-image:url("background.jpg");
+    background-repeat: repeat;
+}
+.menu{
+    background-color: orange;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-left: auto;
+    margin-right: auto;
+
+   }
+   img.centeredpic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border:15px solid orange;
+    }
+ .menupage{
+    background-color: orange;
+    height: fit-content;
+ }
+ p.total{
+    text-align: center;
+
+ }
+ input.totalbutton{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+ } 
+
+ .reviewpage{
+    background-color: orange;
+    height: fit-content;
+    text-align: center;
+ }
+ .button{
+    display: block;
+    height: 75px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   .alert {
+      padding: 20px;
+      background-color: orange;
+      color: orange;
+      margin-bottom: 15px;
+   
+   }
+   .window{
+      padding: 20px;
+      background-color: orange;
+      color: orange;
+      margin-bottom: 15px;
+   
+      
+   }
