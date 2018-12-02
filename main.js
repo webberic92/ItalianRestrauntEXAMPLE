@@ -19,6 +19,7 @@ function totalpriceswitch(t)
 switch (t) {
      case 0:
      totalegg = totalegg + 1;
+    
         break;
     case 1:
     totalchx = totalchx + 1;
@@ -33,6 +34,65 @@ switch (t) {
     totalpizza = totalpizza + 1;
         break;
 }
+
+order(totalegg,totalchx,totalparm,totalspght,totalpizza);
+}
+
+function totalpriceminus(t)
+{
+switch (t) {
+     case 0:
+     if (totalegg > 0)
+     {
+     totalegg--;
+     }
+    else
+    {
+        alert("You have no egg parmaesan order on our record");
+    }
+     break;
+     
+    case 1:
+    if (totalchx > 0)
+    {
+    totalchx--;
+    }
+    else
+    {
+        alert("You have no chicken parmaesan order on our record");
+    }
+    break;
+    case 2:
+    if (totalparm > 0)
+    {
+    totalparm--;
+    }
+    else
+    {
+        alert("You have no veal parmaesan order on our record");
+    }
+    break;
+    case 3:
+    if (totalspght > 0)
+    {
+    totalspght--;
+    }
+    else
+    {
+        alert("You have no spegatti order on our record");
+    }
+    break;
+    case 4:
+    if (totalpizza > 0)
+    {
+    totalpizza--;
+    }
+    else
+    {
+        alert("You have pizza order on our record");
+    }
+    break;
+}
 order(totalegg,totalchx,totalparm,totalspght,totalpizza);
 }
 
@@ -45,15 +105,16 @@ price = price + (c * 15);
 price = price + (d * 9);
 price = price + (e * 20)
 totalprice = price + Tax(price);
-
-
 //ORIG : total.innerHTML = "The total for your order is...$" + price + " + Tax " + Tax(price).toFixed(2) + " = "+ totalprice;
-total.innerHTML = "The sub total for your order is...$" + price;
+total.innerHTML = "The sub total for your order is...$" + price.toFixed(2);
 taxfinal.innerHTML = "Your total Tax is $" + Tax(price).toFixed(2);
-finaltotal.innerHTML = "Your Final total is $"+ totalprice;
+finaltotal.innerHTML = "Your Final total is $"+ totalprice.toFixed(2);
+egg.innerHTML = "You have ordered "+ totalegg + " of these";
+chx.innerHTML = "You have ordered "+ totalchx + " of these";
+parm.innerHTML = "You have ordered "+ totalparm + " of these";
+speg.innerHTML = "You have ordered "+ totalspght + " of these";
+za.innerHTML = "You have ordered "+ totalpizza + " of these";
 }
-
-
 
 // had to install swal "npm install sweetalert --save"
 //added below to menugpage.html.
